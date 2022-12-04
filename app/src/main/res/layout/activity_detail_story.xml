@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context="com.finalsubmission.dicoding.ui.DetailStoryActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_stories"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/image_story"
+        android:transitionName="iv_stories"
+        app:layout_constraintBottom_toTopOf="@+id/tview_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/name"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:transitionName="tv_name"
+        app:layout_constraintBottom_toTopOf="@+id/tview_description"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/date_format"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:transitionName="tv_date"
+        app:layout_constraintBottom_toBottomOf="@+id/tview_name"
+        app:layout_constraintStart_toEndOf="@+id/tview_name"
+        app:layout_constraintTop_toTopOf="@+id/tview_name" />
+
+    <TextView
+        android:id="@+id/tview_description"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:text="@string/tv_desc"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
